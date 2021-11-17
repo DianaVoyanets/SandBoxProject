@@ -1,0 +1,44 @@
+.button__container {
+	width: 400px;
+	height: 52px;
+	position: relative;
+	background-color: rgba(178,80,255,.5);
+	border-radius: 26px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 0.2px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	pointer-events: auto;
+	margin: 25px;
+	z-index: 0;
+	display: block;
+	overflow: hidden;
+}
+  
+.progress {
+	height: 52px;
+	position: absolute;
+	background: linear-gradient(270deg, #b250ff, #802df6) fixed, fixed;
+	border-radius: 26px;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	transition: width 0.5s linear 0s;
+}
+  
+.progress__message {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 1;
+	transition: opacity 0.7s ease, top 0.7s ease;
+}
+
+.progress__message_updating {
+	opacity: 0;
+	top: -15px;
+ }
