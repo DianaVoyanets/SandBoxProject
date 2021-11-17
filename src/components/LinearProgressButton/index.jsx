@@ -5,6 +5,7 @@ import "./index.scss";
 const LinearProgressButton = ({
   progress,
   progressInterval,
+  progressIntervalsCount,
   progressMessages
 }) => {
   const [style, setStyle] = useState({});
@@ -44,7 +45,7 @@ const LinearProgressButton = ({
         }
       >
         {progressMessage}{" "}
-        {progressInterval < progressMessages.length
+        {progressInterval < progressIntervalsCount
           ? `${Math.round(progress)}%`
           : ""}
       </p>

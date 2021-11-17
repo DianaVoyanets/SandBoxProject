@@ -93,6 +93,7 @@ export default function App() {
       <LinearProgressButton
         progress={progress}
         progressInterval={progressInterval}
+        progressIntervalsCount={progressIntervalsCount}
         progressMessages={progressMessages}
       />
     </div>
